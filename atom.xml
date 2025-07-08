@@ -287,8 +287,6 @@
 &lt;/ul&gt;
 &lt;/div&gt;&lt;/details&gt;
 &lt;p&gt;在模型设计时需要在偏差和方差之间找到最佳平衡点，避免模型过于简单（高偏差）或过于复杂（高方差）。&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;strong&gt;相关标签：&lt;/strong&gt; [深度学习，模型训练，优化算法，过拟合，交叉验证，梯度下降，Hessian 矩阵，局部最优]&lt;/p&gt;
 </content>
         <category term="学习笔记" scheme="https://stinncsky.github.io/categories/study-notes/" />
         <category term="机器学习" scheme="https://stinncsky.github.io/categories/study-notes/machine-learning/" />
