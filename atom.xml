@@ -188,10 +188,10 @@
         <category term="学习笔记" scheme="https://stinncsky.github.io/categories/study-notes/" />
         <category term="机器学习" scheme="https://stinncsky.github.io/categories/study-notes/machine-learning/" />
         <category term="神经网络" scheme="https://stinncsky.github.io/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" />
-        <category term="深度学习" scheme="https://stinncsky.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" />
         <category term="CNN" scheme="https://stinncsky.github.io/tags/CNN/" />
         <category term="卷积神经网络" scheme="https://stinncsky.github.io/tags/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" />
         <category term="图像识别" scheme="https://stinncsky.github.io/tags/%E5%9B%BE%E5%83%8F%E8%AF%86%E5%88%AB/" />
+        <category term="深度学习" scheme="https://stinncsky.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" />
         <category term="计算机视觉" scheme="https://stinncsky.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/" />
         <category term="特征提取" scheme="https://stinncsky.github.io/tags/%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/" />
         <category term="池化" scheme="https://stinncsky.github.io/tags/%E6%B1%A0%E5%8C%96/" />
@@ -338,9 +338,9 @@ c-4-3.333-8.333-7.667-13 -13l-13-13l77-155 77-156c66 199.333 139 419.667
         <category term="学习笔记" scheme="https://stinncsky.github.io/categories/study-notes/" />
         <category term="机器学习" scheme="https://stinncsky.github.io/categories/study-notes/machine-learning/" />
         <category term="神经网络" scheme="https://stinncsky.github.io/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" />
+        <category term="深度学习" scheme="https://stinncsky.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" />
         <category term="批量归一化" scheme="https://stinncsky.github.io/tags/%E6%89%B9%E9%87%8F%E5%BD%92%E4%B8%80%E5%8C%96/" />
         <category term="特征归一化" scheme="https://stinncsky.github.io/tags/%E7%89%B9%E5%BE%81%E5%BD%92%E4%B8%80%E5%8C%96/" />
-        <category term="深度学习" scheme="https://stinncsky.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" />
         <category term="训练优化" scheme="https://stinncsky.github.io/tags/%E8%AE%AD%E7%BB%83%E4%BC%98%E5%8C%96/" />
         <category term="协变量偏移" scheme="https://stinncsky.github.io/tags/%E5%8D%8F%E5%8F%98%E9%87%8F%E5%81%8F%E7%A7%BB/" />
         <category term="标准化" scheme="https://stinncsky.github.io/tags/%E6%A0%87%E5%87%86%E5%8C%96/" />
