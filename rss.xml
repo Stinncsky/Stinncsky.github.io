@@ -17,11 +17,16 @@
             <title>力扣每日一题：1900. 最佳运动员的比拼回合</title>
             <link>https://stinncsky.github.io/%E5%8A%9B%E6%89%A3%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98%EF%BC%9A1900-%E6%9C%80%E4%BD%B3%E8%BF%90%E5%8A%A8%E5%91%98%E7%9A%84%E6%AF%94%E6%8B%BC%E5%9B%9E%E5%90%88/</link>
             <category term="算法题解" scheme="https://stinncsky.github.io/categories/%E7%AE%97%E6%B3%95%E9%A2%98%E8%A7%A3/" />
+            <category term="力扣" scheme="https://stinncsky.github.io/categories/%E7%AE%97%E6%B3%95%E9%A2%98%E8%A7%A3/%E5%8A%9B%E6%89%A3/" />
+            <category term="每日一题" scheme="https://stinncsky.github.io/categories/%E7%AE%97%E6%B3%95%E9%A2%98%E8%A7%A3/%E5%8A%9B%E6%89%A3/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/" />
             <category term="算法" scheme="https://stinncsky.github.io/tags/%E7%AE%97%E6%B3%95/" />
             <category term="LeetCode" scheme="https://stinncsky.github.io/tags/LeetCode/" />
+            <category term="深度优先搜索" scheme="https://stinncsky.github.io/tags/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/" />
+            <category term="状态压缩" scheme="https://stinncsky.github.io/tags/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9/" />
+            <category term="记忆化搜索" scheme="https://stinncsky.github.io/tags/%E8%AE%B0%E5%BF%86%E5%8C%96%E6%90%9C%E7%B4%A2/" />
             <pubDate>Sun, 13 Jul 2025 00:20:14 +0800</pubDate>
             <description><![CDATA[ &lt;div class=&#34;note info&#34;&gt;
-&lt;p&gt;本篇为 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy9hYmNkZS8=&#34;&gt;LeetCode 1234&lt;/span&gt; 的题解，记录了解题思路、代码实现。&lt;/p&gt;
+&lt;p&gt;本篇为 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy90aGUtZWFybGllc3QtYW5kLWxhdGVzdC1yb3VuZHMtd2hlcmUtcGxheWVycy1jb21wZXRlP2VudlR5cGU9ZGFpbHktcXVlc3Rpb24mYW1wO2VudklkPTIwMjUtMDctMTI=&#34;&gt;LeetCode 1900&lt;/span&gt; 的题解，记录了解题思路、代码实现。&lt;/p&gt;
 &lt;/div&gt;
 &lt;hr /&gt;
 &lt;h2 id=&#34;题目描述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#题目描述&#34;&gt;#&lt;/a&gt; 📘 题目描述&lt;/h2&gt;
