@@ -7,6 +7,23 @@
     "home_page_url": "https://stinncsky.github.io",
     "items": [
         {
+            "id": "https://stinncsky.github.io/%E5%8A%9B%E6%89%A3%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98%EF%BC%9A2410-%E8%BF%90%E5%8A%A8%E5%91%98%E5%92%8C%E8%AE%AD%E7%BB%83%E5%B8%88%E7%9A%84%E6%9C%80%E5%A4%A7%E5%8C%B9%E9%85%8D%E6%95%B0/",
+            "url": "https://stinncsky.github.io/%E5%8A%9B%E6%89%A3%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98%EF%BC%9A2410-%E8%BF%90%E5%8A%A8%E5%91%98%E5%92%8C%E8%AE%AD%E7%BB%83%E5%B8%88%E7%9A%84%E6%9C%80%E5%A4%A7%E5%8C%B9%E9%85%8D%E6%95%B0/",
+            "title": "力扣每日一题：2410. 运动员和训练师的最大匹配数",
+            "date_published": "2025-07-12T17:19:56.000Z",
+            "content_html": "<div class=\"note info\">\n<p>本篇为 <span class=\"exturl\" data-url=\"aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy9tYXhpbXVtLW1hdGNoaW5nLW9mLXBsYXllcnMtd2l0aC10cmFpbmVycz9lbnZUeXBlPWRhaWx5LXF1ZXN0aW9uJmFtcDtlbnZJZD0yMDI1LTA3LTEz\">LeetCode 2410</span> 的题解，记录了解题思路、代码实现及复杂度分析。</p>\n</div>\n<hr />\n<h2 id=\"题目描述\"><a class=\"anchor\" href=\"#题目描述\">#</a> 📘 题目描述</h2>\n<p>给你一个下标从 0 开始的整数数组  <code>players</code>  ，其中  <code>players[i]</code>  表示第  <code>i</code>  名运动员的 能力 值，同时给你一个下标从 0 开始的整数数组  <code>trainers</code>  ，其中  <code>trainers[j]</code>  表示第  <code>j</code>  名训练师的 训练能力值 。</p>\n<p>如果第  <code>i</code>  名运动员的能力值 小于等于 第  <code>j</code>  名训练师的能力值，那么第  <code>i</code>  名运动员可以 匹配 第  <code>j</code>  名训练师。除此以外，每名运动员至多可以匹配一位训练师，每位训练师最多可以匹配一位运动员。</p>\n<p>请你返回满足上述要求  <code>players</code>  和  <code>trainers</code>  的 最大 匹配数。</p>\n<hr />\n<h2 id=\"解题思路\"><a class=\"anchor\" href=\"#解题思路\">#</a> 🧠 解题思路</h2>\n<p>本题可以使用双指针的贪心策略来解决。首先对运动员和训练师的能力值进行排序，然后使用两个指针分别遍历运动员和训练师数组。当训练师的能力值大于等于运动员的能力值时，说明该运动员可以匹配该训练师，此时将两个指针都向前移动，并增加匹配计数；如果训练师的能力值小于运动员的能力值，则只移动训练师的指针，寻找下一个可能匹配的训练师。这样可以确保每个运动员都能找到最合适的训练师，从而最大化匹配数。而没被选中的训练师则说明他们的能力值都小于当前最小能力值的运动员，因此可以跳过。若是当前没被选中的能力值最小的运动员也无法匹配任何训练师，则可以直接结束匹配。</p>\n<hr />\n<h2 id=\"代码实现\"><a class=\"anchor\" href=\"#代码实现\">#</a> 💡 代码实现</h2>\n<figure class=\"highlight cpp\"><figcaption><span>C++ 解法</span></figcaption><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br><span class=\"line\">4</span><br><span class=\"line\">5</span><br><span class=\"line\">6</span><br><span class=\"line\">7</span><br><span class=\"line\">8</span><br><span class=\"line\">9</span><br><span class=\"line\">10</span><br><span class=\"line\">11</span><br><span class=\"line\">12</span><br><span class=\"line\">13</span><br><span class=\"line\">14</span><br></pre></td><td class=\"code\"><pre><span class=\"line\"><span class=\"keyword\">class</span> <span class=\"title class_\">Solution</span> &#123;</span><br><span class=\"line\"><span class=\"keyword\">public</span>:</span><br><span class=\"line\">    <span class=\"function\"><span class=\"type\">int</span> <span class=\"title\">matchPlayersAndTrainers</span><span class=\"params\">(vector&lt;<span class=\"type\">int</span>&gt;&amp; players, vector&lt;<span class=\"type\">int</span>&gt;&amp; trainers)</span> </span>&#123;</span><br><span class=\"line\">        ranges::<span class=\"built_in\">sort</span>(players);</span><br><span class=\"line\">        ranges::<span class=\"built_in\">sort</span>(trainers);</span><br><span class=\"line\">        <span class=\"type\">int</span> ans = <span class=\"number\">0</span>;</span><br><span class=\"line\">        <span class=\"type\">int</span> i = <span class=\"number\">0</span>, j = <span class=\"number\">0</span>, n = players.<span class=\"built_in\">size</span>(), m = trainers.<span class=\"built_in\">size</span>();</span><br><span class=\"line\">        <span class=\"keyword\">while</span> (j &lt; m &amp;&amp; i &lt; n)&#123;</span><br><span class=\"line\">            <span class=\"keyword\">while</span> (j &lt; m &amp;&amp; trainers[j] &lt; players[i]) j++;</span><br><span class=\"line\">            <span class=\"keyword\">if</span> (j &lt; m) i++, j++, ans++;</span><br><span class=\"line\">        &#125;</span><br><span class=\"line\">        <span class=\"keyword\">return</span> ans;</span><br><span class=\"line\">    &#125;</span><br><span class=\"line\">&#125;;</span><br></pre></td></tr></table></figure>",
+            "tags": [
+                "算法题解",
+                "力扣",
+                "每日一题",
+                "算法",
+                "LeetCode",
+                "贪心",
+                "C++",
+                "双指针"
+            ]
+        },
+        {
             "id": "https://stinncsky.github.io/%E5%8A%9B%E6%89%A3%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98%EF%BC%9A1900-%E6%9C%80%E4%BD%B3%E8%BF%90%E5%8A%A8%E5%91%98%E7%9A%84%E6%AF%94%E6%8B%BC%E5%9B%9E%E5%90%88/",
             "url": "https://stinncsky.github.io/%E5%8A%9B%E6%89%A3%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98%EF%BC%9A1900-%E6%9C%80%E4%BD%B3%E8%BF%90%E5%8A%A8%E5%91%98%E7%9A%84%E6%AF%94%E6%8B%BC%E5%9B%9E%E5%90%88/",
             "title": "力扣每日一题：1900. 最佳运动员的比拼回合",
@@ -18,6 +35,7 @@
                 "每日一题",
                 "算法",
                 "LeetCode",
+                "C++",
                 "深度优先搜索",
                 "状态压缩",
                 "记忆化搜索"
